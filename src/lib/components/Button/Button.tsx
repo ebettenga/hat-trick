@@ -1,11 +1,11 @@
 import { ButtonHTMLAttributes } from 'react'
 
-export const AT_BUTTON_VARIANT = {
+export const BUTTON_VARIANT = {
   PRIMARY: 'primary',
   SECONDARY: 'secondary',
   TERTIARY: 'tertiary',
 } as const
-export type ButtonVariant = keyof typeof AT_BUTTON_VARIANT
+export type ButtonVariant = keyof typeof BUTTON_VARIANT
 
 export const variantClasses: Record<ButtonVariant, string> = {
   PRIMARY: 'bg-green-200 hover:bg-green-400 active:bg-green-500',
