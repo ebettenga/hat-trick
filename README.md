@@ -22,6 +22,10 @@
 
 3. run yarn dev to lanch a storybook.
 
+4. create a branch off of develop
+
+5. create a pr back to develop to merge
+
 ### Main Scripts
 
 Always prepending yarn:
