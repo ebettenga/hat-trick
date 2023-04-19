@@ -1,4 +1,4 @@
-# ⚛️⚡ Vite + React + Typescript Component Library Template
+# ⚛️⚡ Hat-Trick
 
 ## Features
 
@@ -16,17 +16,11 @@
 
 ## Getting Started
 
-1. Create a new repository using this one as template
+1. run yarn install]
 
-2. Create 2 core branches: `develop` and `main`.
+2. Run `yarn prepare` command to setup [Husky](https://typicode.github.io/husky) pre-commit hooks.
 
-   2.1 `develop` will serve all your versions.
-
-   2.2 new additions should be pushed to `main` when they have been approved/tested appropriately.
-
-3. Clone your repo
-4. Install dependencies with `yarn`
-5. Run `yarn prepare` command to setup [Husky](https://typicode.github.io/husky) pre-commit hooks.
+3. run yarn dev to lanch a storybook.
 
 ### Main Scripts
 
@@ -70,7 +64,7 @@ To import the styles the library needs:
 
 ```js
 /* _app.tsx */
-import '<your-library>/dist/style.css'
+import 'hat-trick/dist/style.css'
 // More imports and your App component ...
 ```
 
@@ -78,13 +72,19 @@ To import library components:
 
 ```js
 /* pages/index.tsx */
-import { AtButton } from '<your-library>'
+import { Button } from 'hat-trick'
 // More imports and your Page component...
 ```
+
+Forked From
 
 ## Author
 
 [Ignacio Miranda Figueroa](https://www.linkedin.com/in/ignacio-miranda-figueroa/)
+
+## Contributor
+
+- Ethan Bettenga
 
 ## License
 
