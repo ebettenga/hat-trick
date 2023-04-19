@@ -5,21 +5,21 @@ export const AT_BUTTON_VARIANT = {
   SECONDARY: 'secondary',
   TERTIARY: 'tertiary',
 } as const
-export type AtButtonVariant = keyof typeof AT_BUTTON_VARIANT
+export type ButtonVariant = keyof typeof AT_BUTTON_VARIANT
 
-export const variantClasses: Record<AtButtonVariant, string> = {
+export const variantClasses: Record<ButtonVariant, string> = {
   PRIMARY: 'bg-green-200 hover:bg-green-400 active:bg-green-500',
   SECONDARY: 'bg-blue-200 hover:bg-blue-400 active:bg-blue-500',
   TERTIARY: 'bg-red-200 hover:bg-red-400 active:bg-red-500',
 }
 
-export interface AtButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string
-  variant?: AtButtonVariant
+  variant?: ButtonVariant
   isDisabled?: boolean
 }
 
-export const AtButton = ({ label, variant = 'PRIMARY', isDisabled = false, onClick }: AtButtonProps) => {
+const Button = ({ label, variant = 'PRIMARY', isDisabled = false, onClick }: ButtonProps) => {
   return (
     <button
       className={`transition-colors px-6 py-2 rounded-md ${variantClasses[variant]} ${
@@ -31,3 +31,5 @@ export const AtButton = ({ label, variant = 'PRIMARY', isDisabled = false, onCli
     </button>
   )
 }
+
+export default Button

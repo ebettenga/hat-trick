@@ -1,20 +1,27 @@
 {
-  "name": "vite-component-library-template",
+  "name": "hat-trick",
   "private": false,
-  "version": "1.5.11",
-  "main": "./dist/vite-component-library-template.umd.js",
-  "module": "./dist/vite-component-library-template.es.js",
+  "version": "0.0.20",
+  "main": "./dist/hat-trick.umd.js",
+  "module": "./dist/hat-trick.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/vite-component-library-template.es.js",
-      "require": "./dist/vite-component-library-template.umd.js"
+      "import": "./dist/hat-trick.es.js",
+      "require": "./dist/hat-trick.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
-  "engines": {
-    "node": "16.18.1"
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "Ethan Bettengåa",
+  "bugs": {
+    "url": "https://github.com/ebettenga/hat-trick/issues"
   },
+  "homepage": "https://github.com/ebettenga/hat-trick#readme",
+  "license": "MIT",
   "scripts": {
     "dev": "start-storybook -p 6006",
     "build": "build-storybook",
@@ -23,8 +30,7 @@
     "format:prettier": "prettier --write \"src/**/*.{ts,tsx,js,mdx}\"",
     "test": "vitest",
     "test:cov": "vitest run --coverage",
-    "prepare": "husky install",
-    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -72,9 +78,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "files": [
-    "dist"
-  ],
   "lint-staged": {
     "*.{ts,tsx,js,jsx,json,css,md}": [
       "prettier -w"

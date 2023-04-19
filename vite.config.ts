@@ -22,7 +22,7 @@ const app = async (): Promise<UserConfigExport> => {
     build: {
       lib: {
         entry: path.resolve(__dirname, 'src/lib/index.ts'),
-        name,
+        name: name,
         formats: ['es', 'umd'],
         fileName: (format) => `${name}.${format}.js`,
       },
