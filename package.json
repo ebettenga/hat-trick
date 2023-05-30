@@ -1,27 +1,20 @@
 {
-  "name": "hat-trick",
+  "name": "component-library",
   "private": false,
   "version": "0.0.21",
-  "main": "./dist/hat-trick.umd.js",
-  "module": "./dist/hat-trick.es.js",
+  "main": "./dist/component-library.umd.js",
+  "module": "./dist/component-library.es.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/hat-trick.es.js",
-      "require": "./dist/hat-trick.umd.js"
+      "import": "./dist/component-library.es.js",
+      "require": "./dist/component-library.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
   "files": [
     "dist"
   ],
-  "keywords": [],
-  "author": "Ethan Bettengåa",
-  "bugs": {
-    "url": "https://github.com/ebettenga/hat-trick/issues"
-  },
-  "homepage": "https://github.com/ebettenga/hat-trick#readme",
-  "license": "MIT",
   "scripts": {
     "dev": "NODE_OPTIONS=--openssl-legacy-provider start-storybook -p 6006",
     "build": "build-storybook",

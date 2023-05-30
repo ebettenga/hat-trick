@@ -50,7 +50,7 @@ To import the styles the library needs:
 
 ```js
 /* _app.tsx */
-import 'hat-trick/dist/style.css'
+import 'component-library/dist/style.css'
 // More imports and your App component ...
 ```
 
@@ -58,6 +58,6 @@ To import library components:
 
 ```js
 /* pages/index.tsx */
-import { Button } from 'hat-trick'
+import { Button } from 'component-library'
 // More imports and your Page component...
 ```
